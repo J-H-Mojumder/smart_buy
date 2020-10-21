@@ -9,13 +9,13 @@ What this project does is, it compares price of a product from different onoine 
 <img src="https://github.com/J-H-Mojumder/smart_buy/blob/main/screenshots/home.PNG">
 
 ## Search
-<img src="screenshots/search.png">
+<img src="https://github.com/J-H-Mojumder/smart_buy/blob/main/screenshots/search.png">
 
 ## Adding to list
-<img src="screenshots/adding_to_list.png">
+<img src="https://github.com/J-H-Mojumder/smart_buy/blob/main/screenshots/adding_to_list.png">
 
 ## Added to list
-<img src="screenshots/added_to_list.png">
+<img src="https://github.com/J-H-Mojumder/smart_buy/blob/main/screenshots/added_to_list.png">
 
 ## Remove
-<img src="screenshots/remove.png">
+<img src="https://github.com/J-H-Mojumder/smart_buy/blob/main/screenshots/remove.png">
