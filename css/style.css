@@ -1,0 +1,161 @@
+
+body{
+	background-color: rgba(44, 53, 57,1.0);
+	}
+/*---------------------------navbar start---------------------------*/
+nav{
+	background-color:rgba(12, 9, 10, 0.6);
+	}
+#search-bar{
+	background-color:rgba(12, 9, 10, 0.6);
+	}
+.list-item{
+	position:absolute;
+	z-index:1111;
+	border-radius:5px;
+	padding-right:20px;
+	}
+.amount{
+	width:70px;
+	height:30px;
+	border-radius:3px;
+	font-size:12px;
+	}
+/*---------------------------Sign in stsrt---------------------------*/
+.form-container{
+	background: #121212;
+	display:flex;
+	justify-content:center;
+	}
+.form-box{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	min-height:100vh;
+	}
+.form-box h4{
+	font-weight: bold;
+	color:#fff;
+	}
+.form-box .form-input{
+	position:relative;
+	}
+.form-box .form-input input{
+	width:100%;
+	height:40px;
+	margin-bottom:20px;
+	border:none;
+	border-radius:5px;
+	outline:none;
+	background:white;
+	padding-left:45px;
+	}
+.form-box .form-input span{
+	position:absolute;
+	top:8px;
+	padding-left:20px;
+	color:#777;
+	}
+.form-box .form-input input::placeholder{
+	padding-left:0px;
+	}
+.form-box .form-input input:focus,
+.form-box .form-input input:valid{
+	border-bottom:2px solid #48403d;
+	}
+.form-box input[type="checkbox"]:not(:checked) + label:before{
+	background:transparent;
+	border:2px solid #fff;
+	width:15px;
+	height:15px;
+	}
+.form-box .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+	background-color: #48403d;
+	border:0px;
+	}
+.forget-link,
+.register-link{
+	color:#fff;
+	font-weight:bold;
+	}
+.forget-link:hover,
+.register-link:hover{
+	color:#5D67D5;
+	}
+.form-box button[type="submit"]{
+	width:150px;
+	height:40px;
+	transition:0.5s;
+	}
+.form-box .btn-social{
+	color:fff;
+	border:0px;
+	display:inline-block;
+	margin:0px;
+	margin-right:10px;
+	font-weight:bold;
+	margin-bottom:10px;
+	}
+.form-box .btn-facebook{
+	background:#4866a8;
+	}
+.form-box .btn-google{
+	background:#da3f34;
+	}
+.form-box .btn-twitter{
+	background:#33ccff;
+	}
+.form-box .btn-facebook:hover{
+	background:#3d5785;
+	color:#fff;
+	}
+.form-box .btn-google:hover{
+	background:#bf3b31;
+	color:#fff;
+	}
+.form-box .btn-twitter:hover{
+	background:#2eb7e5;
+	color:#fff;
+	}
+/*---------------------------Sign in end---------------------------*/
+/*------------------main section start------------------*/
+section{
+	margin-bottom:70px;
+	}
+.disable_scrolling::-webkit-inner-spin-button,
+.disable_scrolling::-webkit-outer-spin-button{
+	-webkit-appearance:none;
+	margin:0;
+	}
+.disable_scrolling{
+	-moz-appearance: textfield;
+	text-align:center;
+	}
+.add_to_list_table{
+	width: 100%;
+	background-color: rgba(0,0,0,.3);
+	color: #FFFFFF;
+	}
+
+.product_list_table{
+	background-color: rgba(0,0,0,.4);
+	color: #FFFFFF;
+	width: 100%;
+	}
+.cheapest_price_table{
+	width: 100%;
+	background-color:rgba(0,0,0,.3);
+	color:#FFFFFF;
+	}
+.saving_table{
+	background-color: rgba(0,0,0,.3);
+	color: #FFFFFF;
+	border:2px solid #00A1C3;
+	position:sticky;
+	top:70px;
+	}
+/*------------------main section end------------------*/
+/*---------------------------footer start---------------------------*/
+footer{
+	background-color:rgba(12, 9, 10, 0.6);
+	}

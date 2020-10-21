@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="img/buy_sell.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Smart Buy - my list</title>
+</head>
+<body class="bg-dark">
+<!---------------- Navbar---------------------->
+	<nav class="navbar navbar-dark py-3 navbar-expand">
+    	<div class="container">
+			<div class="col-12">
+            	<ul class="navbar-nav justify-content-between">
+                	<li class="nav-item">
+                    	<a class="nav-link" href="index.html">Smart buy</a>
+                    </li>
+                    <li class="nav-item active">
+                    	<a class="nav-link" href="my_list.html">My lists</a>
+                    </li>
+                    <li class="nav-item">
+                    	<a class="nav-link nav_contact" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    	<a class="nav-link nav_about_us" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                    	<a class="nav-link" href="#" data-toggle="modal" data-target="#sign-out">HK</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!------------------------------Sign in----------------------->
+	<div class="modal" id="sign-out">
+    	<div class="modal-dialog">
+        	<div class="modal-content">
+            	<div class="modal-header">
+                	<h5 class="modal-title">User sign in</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------------main section start--------------------->
+
+	<section>
+    	<div class="">
+        	<div class="row justify-content-around">
+<!-----------------------------main section---sidebar start--------------------->
+            	<input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn"></i>
+                    <i class="fas fa-times" id="cancel"></i>
+                </label>
+            	<div class="cal-4 col-md-3 sidebar">
+                	<header class="text-center text-light">My lists</header>
+                	<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    	<a href="#v-pills-lists" class="nav-link var-nab-list" id="v-pills-lists-tab" data-toggle="pill"><i class="fas fa-hands-helping"></i>Lists</a>
+                        <a href="#v-pills-create-list" class="nav-link var-nab-list" id="v-pills-create-list-tab" data-toggle="pill"><i class="fas fa-link"></i>Create list</a>
+                        <a href="#v-pills-reminders" class="nav-link var-nab-list" id="v-pills-reminders-tab" data-toggle="pill"><i class="fas fa-qrcode"></i>Reminders</a>
+                        <a href="#v-pills-achive" class="nav-link var-nab-list" id="v-pills-achive-tab" data-toggle="pill"><i class="fas fa-sliders-h"></i>Archive</a>
+                    	<a href="#v-pills-feedback" class="nav-link var-nab-list" id="v-pills-feedback-tab" data-toggle="pill"><i class="far fa-question-circle"></i>Help & feedback</a>
+                        <a href="#v-pills-contact" class="nav-link var-nab-list" id="v-pills-contact-tab" data-toggle="pill"><i class="far fa-envelope"></i>Contact</a>
+                    	<a href="#v-pills-about" class="nav-link var-nab-list" id="v-pills-about-tab" data-toggle="pill"><i class="fas fa-user-astronaut"></i>About us</a>
+                    </div>
+                </div>
+<!-----------------------------main section---sidebar end--------------------->
+            	<div class="col-8 col-md-9">
+                	<div class="tab-content" id="v-pills-tabcontent">
+<!-----------------main section-- list start--------------------->
+                    	<div class="tab-pane fade show active" id="v-pills-lists" role="tabpanel">
+                        	<div class="row list_divRow">
+                            	<div class="col-md-6">
+                                	
+                                	<table class="list_table_color my-4">
+                                    	<tr>
+                                        	<td>
+                                            	<div class="mt-3 text-info list_titles">Product list items</div>
+                                            	<hr />
+                                            </td>
+                                        </tr>
+                                    	<tr>
+                                        	<div class="shop_coles_product_list">
+                                        		<td class="text-info list_titles coles_product_title">Coles</td>
+                                            </div>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<div class="shop_coles_product_items">
+                                                	<div>
+                                                	<input type="checkbox">
+                                                    <input type="text" class="input_items">
+                                                    <button class="remove_field btn btn-outline-danger btn-sm">Remove</button>
+                                                    </div>
+                                                    <div>
+                                                	<input type="checkbox">
+                                                    <input type="text" class="input_items">
+                                                    <button class="remove_field btn btn-outline-danger btn-sm">Remove</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td class="text-info list_titles woolworths_product_title">Woolworths</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<div class="shop_woolworths_product_items">
+                                                	<div>
+                                                	<input type="checkbox">
+                                                    <input type="text" class="input_items">
+                                                    <button class="remove_field btn btn-outline-danger btn-sm">Remove</button>
+                                                    </div>
+                                                    <div>
+                                                	<input type="checkbox">
+                                                    <input type="text" class="input_items">
+                                                    <button class="remove_field btn btn-outline-danger btn-sm">Remove</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td class="text-info list_titles aldi_product_title">Aldi</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<div class="shop_aldi_product_items">
+                                                	<div>
+                                                	<input type="checkbox">
+                                                    <input type="text" class="input_items">
+                                                    <button class="remove_field btn btn-outline-danger btn-sm">Remove</button>
+                                                    </div>
+                                                    <div>
+                                                	<input type="checkbox">
+                                                    <input type="text" class="input_items">
+                                                    <button class="remove_field btn btn-outline-danger btn-sm">Remove</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-6">
+                                	
+                                	<table class="list_table_color table-striped my-4">
+                                    	<tr>
+                                        	<td>
+                                            	<div class="mt-3 text-info list_titles">Purchased list items</div>
+                                                <hr />
+                                            </td>
+                                        </tr>
+                                    	<tr>
+                                        	<div class="shop_coles_purchased_list">
+                                        		<td class="text-info list_titles coles_purchased_title">Coles</td>
+                                            </div>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<div class="shop_coles_purchased_items">
+                                                	
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td class="text-info list_titles woolworths_purchased_title">Woolworths</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<div class="shop_woolworths_purchased_items">
+                                                	
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td class="text-info list_titles aldi_purchased_title">Aldi</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<div class="shop_aldi_purchased_items">
+                                                	
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div>
+                                <form>
+                                    <input type="button" class="save_list btn btn-outline-info btn-block w-50" value="Save">
+                               </form>
+                           </div>
+                        </div>
+<!-----------------main section-- list end--------------------->
+<!-----------------main section--- Create list start----------------->
+                        <div class="tab-pane fade" id="v-pills-create-list" role="tabpanel">
+                        	<div class="row create_divRow">
+                            
+                            	<div class="col-md-6">
+                                	<div class="mt-3 text-info list_titles">Product list items</div>
+                                	<div class="my-2">
+                                    	<div class="product_list_items">
+                                        	<form class="mt-3">
+                                            	<button class="add_list_button btn btn-outline-info">Add list items</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            	<div class="col-md-6">
+                                	<div class="mt-3 text-info list_titles">Purchased list items</div>
+                                	<div class="purchased_list_items">
+                                    	
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div>
+                            <form>
+                                <input type="button" class="save_list btn btn-outline-info btn-block w-50" value="Save">
+                           </form>
+                           </div>
+                        </div>
+<!-----------------------------main section--- Create list end--------------------->
+
+<!----------------main section---Reminder start---------------->
+                        <div class="tab-pane fade" id="v-pills-reminders" role="tabpanel">
+                        	<div class="container reminder_form">
+                            	<h1>Reminder</h1>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form method="post">
+                                            <div class="form-group">
+                                                <label for="">Date</label>
+                                                <input type="text" class="form-control bg_contact date_Picker">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Time</label>
+                                                <input type="text" class="form-control bg_contact time_Picker" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Title</label>
+                                                <input type="text" placeholder="Title" class="form-control bg_contact">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Description</label>
+                                                <textarea rows="5" placeholder="Description" class="form-control bg_contact"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="button" class="btn btn-outline-info btn-block" value="Submit" />
+                                            </div>
+                                           </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!----------------main section---Reminder end---------------->
+
+<!-----------------------------main section---Achive start--------------------->
+                        <div class="tab-pane fade" id="v-pills-achive" role="tabpanel">
+                        	<div class="container archive_form">
+                                <div class="row">
+                                    <div class="col-md-6 archive_design">
+                                    	<h4 class="text-info ml-4">According to shops</h4>
+                                        <div>
+                                        	<ul>
+                                            	<li><input type="checkbox" /><a href="#">Saved item - 1</a></li>
+                                                <li><input type="checkbox" /><a href="#">Saved item - 3</a></li>
+                                                <li><input type="checkbox" /><a href="#">Saved item - 5</a></li>
+                                                <li><input type="checkbox" /><a href="#">Saved item - 7</a></li>
+                                                <li><input type="checkbox" /><a href="#">Saved item - 9</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 archive_design">
+                                    	<h4 class="text-info ml-4">According to items</h4>
+                                    	<div>
+                                        	<ul>
+                                            	<li><input type="checkbox" /><a href="#">Saved item - 2</a></li>
+                                                <li><input type="checkbox" /><a href="#">Saved item - 4</a></li>
+                                                <li><input type="checkbox" /><a href="#">Saved item - 6</a></li>
+                                                <li><input type="checkbox" /><a href="#">Saved item - 8</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-danger btn-block w-50 m-auto btn_delete">Delete</button>
+                            </div>
+                        </div>
+<!-----------------------------main section---Achive end--------------------->
+
+<!-----------------------------main section---feedback start--------------------->
+                        <div class="tab-pane fade" id="v-pills-feedback" role="tabpanel">
+                        	<div class="container feedback_form">
+                            	<h1 class="text-center">Help & feedback</h1>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    	<div id="accordion" role="tablist">
+                                        	<div class="card feedback_card">
+                                            	<div class="card-header" role="tab">
+                                                	<h5 class="mb-0">
+                                                    	<a href="#section_1" data-toggle="collapse">Section-1</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="collapse" id="section_1" data-parent="#accordion">
+                                                	<div class="card-body">
+                                                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, natus maxime sequi molestiae aperiam illum assumenda eum possimus quidem unde modi labore id similique dolor quisquam quam laudantium. Facere, fuga!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card feedback_card">
+                                            	<div class="card-header" role="tab">
+                                                	<h5 class="mb-0">
+                                                    	<a href="#section_2" data-toggle="collapse">Section-3</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="collapse" id="section_2" data-parent="#accordion">
+                                                	<div class="card-body">
+                                                    	<ul>
+                                                        	<li>First</li>
+                                                            <li>Second</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card feedback_card">
+                                            	<div class="card-header" role="tab">
+                                                	<h5 class="mb-0">
+                                                    	<a href="#section_3" data-toggle="collapse">Section-3</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="collapse" id="section_3" data-parent="#accordion">
+                                                	<div class="card-body">
+                                                    	Lorem ipsum dolor sit amet.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-----------------------------main section---feedback end--------------------->
+
+<!-----------------------------main section---Contact start--------------------->
+                        <div class="tab-pane fade" id="v-pills-contact" role="tabpanel">
+                        	<div class="container contact_form">
+                                <h1>Contact us</h1>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <p>Email:- smartbuy@email.com</p>
+                                        <p>Phone:- xxxxxxxxxx</p>
+                                    </div>
+                                    
+                                    <div class="col-md-7">
+                                    <form method="post">
+                                        <div class="form-group">
+                                            <label for="">Name</label>
+                                            <input type="text" placeholder="Full name" class="form-control bg_contact" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Email</label>
+                                            <input type="text" placeholder="Email" class="form-control bg_contact" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Massage</label>
+                                            <textarea rows="6" placeholder="Massage" class="form-control bg_contact" required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-outline-info btn-block" >Send</button>
+                                        </div>
+                                       </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-----------------------------main section---Contact end--------------------->
+
+<!-----------------------------main section---About us start--------------------->
+                        <div class="tab-pane fade" id="v-pills-about" role="tabpanel">
+                        	<div class="container about_us_form">
+                            	<h1 class="text-center">About us</h1>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    	<div class="container text-justify">
+                                        <p>At Smartbuy.com, we believe everyone deserves to get product in cheapest price from a online store. Innovation and simplicity makes us happy.  Our goal is to help people that can save money in their shopping from online store. We're excited to help you on your shopping!</p>
+                                        
+                                        <p>We created the Smartbuy.com site with the user's perspective in mind. We wanted to offer a platform where people can easily able to know the cheapest price of products of their daily necessities. We keep it simple, so users can focus on creating a shopping list from this website that reflects on their own necessities. Best of all - it's free. You can get online service and start buying products right away. </p>
+                                        
+                                        <p>Smartbuy  is one of the most distinguished online shopping store that is carefully tailored to offer a splendid shopping experience to its consumers. Loaded with attractive rates, this online shopping portal successfully caters to the demands of people. We offer customers a efficient way to purchase products from any website. We are committed to serving you with the cheapest price.</p>
+                                        
+                                        <p>After seeing an increased need for price comparison, we developed one of the feature and easily get product from online store, allowing customers to get their savings. Today, we're proud to empower individuals to get savings money around the world. Everyone deserves a cheapest price, and we're excited to see what you get. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-----------------------------main section---About us end--------------------->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-----------------------------main section end--------------------->
+<!-----------------------------footer start--------------------->
+	<footer class=" footer fixed-bottom text-center text-light py-1 mt-3">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12">
+                	<p class="pt-2">Copyright &copy; 2020, <a href="index.html" class=" text-light">Smart Buy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-----------------------------footer end--------------------->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
