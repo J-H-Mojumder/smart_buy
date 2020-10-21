@@ -6,7 +6,7 @@ The SQL file is also given here. I have used **MySql** as my database.
 What this project does is, it compares price of a product from different onoine shops and views the customer the most cost effective one. One can simply search a product in the search-bar and a list of the products appears with information about the online shop, per unit price and package price. In this way it gives the user a good overview of the products. Also there is a segment to show which products they have selected and where they have to go to grab the product. I also shows total cost of the list the user have made.
 
 ## Home Page
-<img src="screenshots/home.png">
+<img src="https://github.com/J-H-Mojumder/smart_buy/blob/main/screenshots/home.PNG">
 
 ## Search
 <img src="screenshots/search.png">
